@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Aula d ventoos dom</title>
+    <style>
+    div#area{
+        background : red;
+        color : white;
+    width : 200px;
+    height: 200px;
+    line-height : 200px;
+    text-align: center;
+
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id ="area" onclick="clicar()" onmouseenter = "entrar()" onmouseout = "sair()">
+        interaja 
+    </div>
+    <script>
+        let aREA = window.document.getElementById('area')
+    function clicar(){
+        
+        aREA.innerText = 'CLICOU'
+        aREA.style.background = 'blue' 
+            }
+    function entrar(){
+        aREA.innerText = 'entrou'
+        aREA.style.background = 'red'
+
+    }
+
+    function sair(){
+        aREA.innerText = 'saiu'
+        aREA.style.background = 'black'
+
+
+    }
+    </script>
+</body>
+</html>
